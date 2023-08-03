@@ -7,5 +7,11 @@ int pageCount(int n, int p) {
     return std::min(forwardCount,backwardCount);
 }
 int main(){
-    std::cout << pageCount(6,4);
+    std::cout << "Enter number of pages:";
+    int numberOfPages;
+    std::cin >> numberOfPages;
+    std::cout << "Enter page number:";
+    int pageNumber;
+    std::cin >> pageNumber;
+    std::cout << "The minimum number of page flips is: "<< pageCount(numberOfPages,pageNumber)<< std::endl;
 }
