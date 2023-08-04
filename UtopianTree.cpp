@@ -7,10 +7,10 @@ int utopianTree(int n) {
     }
     else{
         for(int i =1; i<=n; i++){
-            if(i%2==1){
+            if(i%2==1){ // Odd Cycle(Spring)
             newHeight *=2;
         }
-        else{
+        else{ // Even Cycle(Summer)
             newHeight += 1;
         }
     }
