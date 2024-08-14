@@ -4,6 +4,8 @@
 #include <iostream>
 #include <algorithm>
 
+// The override keyword is implicitly called if not typed, but for clarity I typed it out. 
+
 class Person
 {
 public:
@@ -27,11 +29,11 @@ public:
     {
         cur_id = professor_count++;
     }
-    void getdata()
+    void getdata() override
     {
         std::cin >> name >> age >> publications;
     }
-    void putdata()
+    void putdata() override
     {
         std::cout << name << " " << age << " " << publications << " " << cur_id << std::endl;
     }
@@ -50,7 +52,7 @@ public:
     {
         cur_id = student_count++;
     }
-    void getdata()
+    void getdata() override
     {
         std::cin >> name >> age;
         for (int i = 0; i < 6; i++)
@@ -60,7 +62,7 @@ public:
             sum += mark;
         }
     }
-    void putdata()
+    void putdata() override
     {
         std::cout << name << " " << age << " " << sum << " " << cur_id << " " << std::endl;
     }
