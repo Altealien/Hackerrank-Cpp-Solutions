@@ -27,11 +27,11 @@ public:
     {
         cur_id = professor_count++;
     }
-    void getdata() override
+    void getdata()
     {
         std::cin >> name >> age >> publications;
     }
-    void putdata() override
+    void putdata()
     {
         std::cout << name << " " << age << " " << publications << " " << cur_id << std::endl;
     }
@@ -50,7 +50,7 @@ public:
     {
         cur_id = student_count++;
     }
-    void getdata() override
+    void getdata()
     {
         std::cin >> name >> age;
         for (int i = 0; i < 6; i++)
@@ -60,7 +60,7 @@ public:
             sum += mark;
         }
     }
-    void putdata() override
+    void putdata()
     {
         std::cout << name << " " << age << " " << sum << " " << cur_id << " " << std::endl;
     }
